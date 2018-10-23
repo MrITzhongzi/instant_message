@@ -1,0 +1,27 @@
+.login-box {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-con {
+    width: 500px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px 20px 50px 20px;
+}
+
+.login-title {
+    font: bold 18px/18px "微软雅黑";
+}
+
+.login-input {
+    margin: 15px 0;
+}
+
+.login-btn {
+    margin-top: 20px;
+    width: 100%;
+}

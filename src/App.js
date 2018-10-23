@@ -1,28 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+// import axios from 'axios';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import Login from './component/Login';
+import Main from './component/Main';
 import './App.css';
+// import 'antd/dist/antd.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+    async componentDidMount() {
+        // const respon = await axios.post('/login',{name: "lhw", password: "333"});
+        //     // console.log(respon);
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <Router>
+                    <div>
+                        <Route path={"/login"} component={Login}/>
+                        <Route path={"/"} component={Main}/>
+                    </div>
+                </Router>
+            </div>
+        );
+    }
 }
 
 export default App;
