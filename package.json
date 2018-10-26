@@ -2,7 +2,7 @@
   "name": "instant_msg_front",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://127.0.0.1:5001",
+  "proxy": "http://127.0.0.1:1002",
   "dependencies": {
     "antd": "^3.10.1",
     "axios": "^0.18.0",

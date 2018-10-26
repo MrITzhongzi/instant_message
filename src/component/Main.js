@@ -13,6 +13,10 @@ class Main extends React.Component {
     bottomDom=null;
 
     async componentDidMount(){
+        if(!localStorage.getItem("qluser")){
+            this.props.history.push("/login");
+            return;
+        }
         setInterval(await this.getMsg, 1000);
     }
 

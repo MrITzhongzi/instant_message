@@ -32,8 +32,8 @@ class Login extends React.Component {
         };
         const respData = await LoginApi(data);
         if(respData.status === "ok"){
-            this.props.history.push("/");
             localStorage.setItem("qluser", this.state.username);
+            this.props.history.push("/");
             return;
         };
         Modal.info({
